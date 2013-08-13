@@ -19,6 +19,7 @@
 <body>
   <div>
     <h1><%= "Hello there, it is: #{Time.now.to_s}" %></h1>
+    <p><%= InspirationalQuote.all[rand(InspirationalQuote.count)].quote %></p>
   </div>
 </body>
 </html>
